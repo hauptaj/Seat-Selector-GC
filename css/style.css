@@ -1,0 +1,41 @@
+div.seatSpot {
+  display: inline;
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 1%;
+}
+
+div.seatNot {
+  display: inline;
+  float: left;
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  margin: 1%;
+}
+
+
+div.seatSpotOne {
+  margin-left: 25%;
+}
+
+div.row {
+  width: 50%;
+  display: inline;
+  float: left;
+  clear: left;
+  margin-left: 25%;
+}
+
+div.seatStage {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  border: 1px solid black;
+}
