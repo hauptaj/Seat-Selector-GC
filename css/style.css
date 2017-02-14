@@ -31,6 +31,29 @@ div.seatSpotOne {
 /** {
   border: 1px solid black;
 }*/
+body {
+  background-color: black;
+}
+
+.container {
+  margin-top: 300px;
+}
+
+div.header {
+  position: relative;
+  left: 25%;
+}
+
+.stage {
+  position: relative;
+  top: 30px;
+  left: 25%;
+}
+
+.seatStage {
+  position: relative;
+  top: 40px;
+}
 
 div.seatSpotBs {
   margin: 1%;
@@ -41,20 +64,43 @@ div.seatSpotBs {
 
 div#rowA {
   position: relative;
-  left: 25%;
+  left: 36%;
 }
 
 div#rowB {
   position: relative;
-  left: 22%;
+  left: 33%;
 }
 
 div#rowC {
   position: relative;
-  left: 19%;
+  left: 30%;
 }
 
 div#rowD {
   position: relative;
-  left: 10%;
+  left: 21%;
+}
+
+span.copyRight {
+  float: right;
+  margin-right: 5%;
+}
+
+span.contactSpan {
+  color: white;
+  margin-left: 5%;
+  margin-right: 1%;
+}
+
+span.contactSpan:hover {
+  text-decoration: underline;
+}
+
+span.glyphicon {
+  margin-left: 1%;
+  color: white;
+}
+span.glyphicon:hover {
+  background-color: blue;
 }
