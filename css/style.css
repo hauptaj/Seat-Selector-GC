@@ -73,3 +73,26 @@ div#rowD {
   position: relative;
   left: 10%;
 }
+
+span.copyRight {
+  float: right;
+  margin-right: 5%;
+}
+
+span.contactSpan {
+  color: white;
+  margin-left: 5%;
+  margin-right: 1%;
+}
+
+span.contactSpan:hover {
+  text-decoration: underline;
+}
+
+span.glyphicon {
+  margin-left: 1%;
+  color: white;
+}
+span.glyphicon:hover {
+  background-color: blue;
+}
