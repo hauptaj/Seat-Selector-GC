@@ -35,10 +35,6 @@ body {
   background-color: black;
 }
 
-.container {
-  margin-top: 300px;
-}
-
 div.header {
   position: relative;
   left: 25%;
@@ -61,6 +57,9 @@ div.seatSpotBs {
   height: 50px;
 }
 
+div.spacer {
+  height: 50px;
+}
 
 div#rowA {
   position: relative;
@@ -103,4 +102,18 @@ span.glyphicon {
 }
 span.glyphicon:hover {
   background-color: blue;
+}
+
+div.infoForm {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  width: auto;
+  border: 1px solid grey;
+}
+
+form input {
+  display: block;
+  float: left;
+  clear: left;
 }
