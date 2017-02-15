@@ -37,33 +37,6 @@ transition: 1s ease;
   left: 25%;
 }*/
 
-div.mainImg {
-  width: 100%;
-  height: 100%;
-  opacity:0.5;
-  transition: 1s ease;
-}
-
-.mainImg:hover {
-opacity:1;
-transition: 1s ease;
-}
-
-div.leftImg {
-  display: inline;
-  position: absolute;
-  top: 220px;
-  height: 300px;
-}
-
-div.rightImg {
-  display: inline;
-  position: absolute;
-  top: 220px;
-  left: 500px;
-  height: 300px;
-}
-
 div.seatSpotBs {
   margin: 1%;
   width: 50px;
@@ -94,12 +67,8 @@ div#rowD {
   left: 21%;
 }
 
-form input {
-  display: block;
-  float: left;
-  clear: left;
-}
 
+/*--STYLE FOOTER--*/
 span.copyRight {
   float: right;
   margin-right: 5%;
@@ -107,6 +76,7 @@ span.copyRight {
 
 span.contactSpan {
   color: white;
+      font-family: 'Cagliostro', sans-serif;
   margin-left: 5%;
   margin-right: 1%;
 }
@@ -122,28 +92,10 @@ span.glyphicon {
 span.glyphicon:hover {
   background-color: blue;
 }
+/*--END FOOTER STYLE--*/
 
-/*---STYLE FOR FOR USER TO SELECT SEAT---*/
-
-div.infoForm {
-  position: fixed;
-  top: 10%;
-  left: 5%;
-  width: auto;
-  border: 1px solid grey;
-}
-
-form input {
-  display: block;
-  float: left;
-  clear: left;
-}
-
-div.mainImg {
-  width: 100%;
-  height: 100%;
-}
-
+/*--LANDING PAGE--*/
+/*--SPOTLIGHT ANIMATION--*/
  @-webkit-keyframes swingingLeft {
 	0%{-webkit-transform: rotate(10deg);}
 	50%{-webkit-transform: rotate(45deg)}
@@ -190,17 +142,24 @@ div.rightImg {
  transform-origin: 50% 154%;
  -webkit-animation: swingingRight 3.5s ease-in-out forwards infinite;
  animation: swingingRight 3.5s ease-in-out forwards infinite;
-
 }
 
-button {
-  float: left;
-  clear: left;
-  margin-top: 10px;
-  background-color: #333333;
-  border: 1px solid white;
-  border-radius: 25px;
+div.mainImg {
+  width: 100%;
+  height: 100%;
+  opacity:0.5;
+  transition: 1s ease;
 }
+
+.mainImg:hover {
+opacity:1;
+transition: 1s ease;
+}
+
+/*--END SPOTLIGHT ANIMATION--*/
+/*--END LANDING PAGE--*/
+
+/*---STYLE FOR FOR USER TO SELECT SEAT---*/
 
 #UserInfoForm {
   color: darkGrey;
@@ -214,6 +173,12 @@ button {
   height: 45%;
   width: 20%;
   /*box-shadow: 5px 5px 9px #5B5A58;*/
+  display: block;
+  float: left;
+  clear: left;
+  position: fixed;
+  top: 10%;
+  left: 5%;
   z-index: 100;
 }
 
@@ -231,3 +196,20 @@ button {
   border-radius: 25px;
   padding-left: 10px;
 }
+
+/*form input {
+  display: block;
+  float: left;
+  clear: left;
+}*/
+
+button {
+  float: left;
+  clear: left;
+  margin-top: 10px;
+  background-color: #333333;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+/*--END FORM STYLE--*/
