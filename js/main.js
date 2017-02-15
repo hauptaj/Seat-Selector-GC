@@ -7,11 +7,10 @@ $(document).ready(function() {
 
     $("img.seat").on("click", function() {
         var seatId = $(this).attr("id");
+        $("#seatPlace").val(seatId);
         console.log(seatId);
     });
     //get this variblae into the form.
-
-
 
 
     $("img.seat").on('click', function() {
