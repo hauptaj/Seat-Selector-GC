@@ -20,3 +20,5 @@ $(document).ready(function() {
   $("img.seat").on('click', function() {
     $('[data-toggle="tooltip"]').tooltip();
   });
+  
+});
