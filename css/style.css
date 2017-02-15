@@ -196,3 +196,8 @@ div.rightImg {
  animation: swingingRight 3.5s ease-in-out forwards infinite;
 
 }
+
+button {
+  float: left;
+  clear: left;
+}
