@@ -14,19 +14,9 @@ $(document).ready(function() {
     console.log($(this).attr('id'));
   });
 
-  $(".leftImg").rotate({bind:{
-    click: function(){
-      $(this).rotate({
-        angle: 0,
-        center: ["50%", "100%"],
-        animateTo:180
-        })
-      }
-    }
-  });
+
+
 
   $("img.seat").on('click', function() {
     $('[data-toggle="tooltip"]').tooltip();
   });
-
-});
