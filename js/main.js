@@ -11,13 +11,17 @@ $(document).ready(function() {
         var seatId = $(this).attr("id");
         console.log(seatId);
     });
+    //get this variblae into the form.
+
+
+
 
     $("img.seat").on('click', function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
 
-    $('button #loadButton').on('click', function() {
-        var practice = new userInfo($("#firstName").val(), $("#lastName").val(), $("#email").val(), $("#phone").val());
+    $('button#loadButton').on('click', function() {
+        var practice = new userInfo($("#firstName").val(),$("#lastName").val(), $("#email").val(), $("#phone").val());
         console.log(practice);
         seatArray.push(practice);
         console.log(seatArray);
