@@ -201,3 +201,12 @@ button {
   float: left;
   clear: left;
 }
+
+#UserInfoForm {
+  color: darkGrey;
+  background-color: #353434;
+}
+
+#UserInfoForm legend {
+  color: black;
+}
