@@ -37,15 +37,6 @@ transition: 1s ease;
   left: 25%;
 }*/
 
-/*---STYLE FOR FOR USER TO SELECT SEAT---*/
-div.infoForm {
-  position: fixed;
-  top: 10%;
-  left: 5%;
-  width: auto;
-  border: 1px solid grey;
-}
-
 div.mainImg {
   width: 100%;
   height: 100%;
@@ -131,6 +122,8 @@ span.glyphicon {
 span.glyphicon:hover {
   background-color: blue;
 }
+
+/*---STYLE FOR FOR USER TO SELECT SEAT---*/
 
 div.infoForm {
   position: fixed;
@@ -218,7 +211,7 @@ button {
   padding: 10px;
   border-radius: 25px;
   border: 2px solid white;
-  height: 40%;
+  height: 45%;
   width: 20%;
   /*box-shadow: 5px 5px 9px #5B5A58;*/
 }
