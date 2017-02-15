@@ -214,6 +214,7 @@ button {
   height: 45%;
   width: 20%;
   /*box-shadow: 5px 5px 9px #5B5A58;*/
+  z-index: 100;
 }
 
 #UserInfoForm legend {
