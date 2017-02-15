@@ -17,6 +17,6 @@ $(document).ready(function() {
 
 
 
-  $("img.seat").on('hover', function() {
-    $('#a1').tooltip();
+  $("img.seat").on('click', function() {
+    $('[data-toggle="tooltip"]').tooltip();
   });
