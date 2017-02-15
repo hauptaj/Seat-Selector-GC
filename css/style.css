@@ -115,7 +115,6 @@ span.glyphicon {
 span.glyphicon:hover {
   background-color: blue;
 }
-<<<<<<< HEAD
 
 div.infoForm {
   position: fixed;
@@ -152,42 +151,35 @@ div.mainImg {
 div.leftImg {
   display: inline;
   position: absolute;
-  top: 220px;
+  top: 130px;
   height: 300px;
-  -webkit-transform-origin: 50% 100;
-  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 154%;
+  transform-origin: 50% 154%;
   -webkit-animation: swingingLeft 3.5s ease-in-out forwards infinite;
   animation: swingingLeft 3.5s ease-in-out forwards infinite;
 
 }
 
 @-webkit-keyframes swingingRight {
-	0%{-webkit-transform: rotate(10deg);}
+	0%{-webkit-transform: rotate(-10deg);}
 	50%{-webkit-transform: rotate(-45deg)}
-	100%{-webkit-transform: rotate(10deg);}
+	100%{-webkit-transform: rotate(-10deg);}
 }
 
  @keyframes swingingRight {
-	0%{transform: rotate(10deg);}
+	0%{transform: rotate(-10deg);}
 	50%{transform: rotate(-45deg)}
-	100%{transform: rotate(10deg);}
+	100%{transform: rotate(-10deg);}
 }
 
 div.rightImg {
   display: inline;
   position: absolute;
-  top: 220px;
+  top: 130px;
   left: 820px;
   height: 300px;
-  /*-webkit-animation-name: rotate;*/
- /*animation-delay: 3s;
- -webkit-animation-duration: 2s;
- -webkit-animation-iteration-count: infinite;
- -webkit-animation-direction: linear;
- -webkit-transform-origin: 0% 0% 0% 50%;
- -webkit-animation-timing-function: ease-in-out;*/
- -webkit-transform-origin: 50% 100;
- transform-origin: 50% 100%;
+ -webkit-transform-origin: 50% 154%;
+ transform-origin: 50% 154%;
  -webkit-animation: swingingRight 3.5s ease-in-out forwards infinite;
  animation: swingingRight 3.5s ease-in-out forwards infinite;
 
