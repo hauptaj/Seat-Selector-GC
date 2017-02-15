@@ -16,6 +16,13 @@ body {
   position: relative;
   top: 30px;
   left: 29%;
+  opacity:1;
+  transition: 1s ease;
+}
+
+.stage:hover {
+opacity:0.5;
+transition: 1s ease;
 }
 
 .seatStage {
@@ -37,9 +44,15 @@ div.infoForm {
 }
 
 div.mainImg {
-  /*margin-top: 50px;*/
   width: 100%;
   height: 100%;
+  opacity:0.5;
+  transition: 1s ease;
+}
+
+.mainImg:hover {
+opacity:1;
+transition: 1s ease;
 }
 
 div.leftImg {
@@ -131,7 +144,6 @@ form input {
 }
 
 div.mainImg {
-  /*margin-top: 50px;*/
   width: 100%;
   height: 100%;
 }
@@ -184,32 +196,3 @@ div.rightImg {
  animation: swingingRight 3.5s ease-in-out forwards infinite;
 
 }
-
-
-/*@-webkit-keyframes rotate {
- 0% {
-   -webkit-transform: rotate(0deg);
- }
- 10% {
-   -webkit-transform: rotate(10deg);
- }
- 20% {
-   -webkit-transform: rotate(20deg);
- }
- 30% {
-   -webkit-transform: rotate(10deg);
- }
- 40% {
-   -webkit-transform: rotate(5deg);
- }
- 50% {
-   -webkit-transform: rotate(0deg);
- }
- 60% {
-   -webkit-transform: rotate(-5deg);
- }
- 70% {
-   -webkit-transform: rotate(-10deg);
-}*/
-=======
->>>>>>> 40a317e5ecbcb8729d499936459da2785acb0a2b
