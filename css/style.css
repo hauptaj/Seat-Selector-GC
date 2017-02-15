@@ -157,6 +157,11 @@ transition: 1s ease;
 }
 
 /*--END SPOTLIGHT ANIMATION--*/
+
+.entranceInstructions {
+  width: 100%;
+  text-align: center;
+}
 /*--END LANDING PAGE--*/
 
 /*---STYLE FOR FOR USER TO SELECT SEAT---*/
