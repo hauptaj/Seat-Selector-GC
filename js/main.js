@@ -6,6 +6,7 @@ $(document).ready(function() {
     // identify clicked seat as chosen.
     $("img.seat").on('click', function() {
         $(this).attr('src', "assets/selectSeat.png");
+        })
     });
 
     //send seatID to form.
@@ -22,9 +23,7 @@ $(document).ready(function() {
     //submit button to store form information in array.
     $('button#loadButton').on('click', function() {
         var practice = new userInfo($("#seatPlace").val(), $("#firstName").val(),$("#lastName").val(), $("#email").val(), $("#phone").val());
-        console.log(practice);
         seatArray.push(practice);
-        console.log(seatArray);
 
     //function to change selected seats to occupied seats after submit confirmation.
         $('img.seat').each(function() {
@@ -42,7 +41,7 @@ $(document).ready(function() {
       $('#email').val('');
       $('#phone').val('');
 
-      
+
 
     });
 
