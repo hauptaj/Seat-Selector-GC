@@ -90,6 +90,13 @@ span.glyphicon:hover {
 /*--END FOOTER STYLE--*/
 
 /*--LANDING PAGE--*/
+
+entranceInstructions {
+font-family: stalemate;
+    font-size: 80px;
+    text align: center;
+    color: #FFD700;}
+    
 /*--SPOTLIGHT ANIMATION--*/
  @-webkit-keyframes swingingLeft {
 	0%{-webkit-transform: rotate(10deg);}
