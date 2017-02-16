@@ -1,178 +1,236 @@
 a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: grey;
+    text-decoration: underline;
+    color: grey;
 }
 
 body {
-  background-color: black;
+    background-color: black;
 }
+
 
 /*--BEGIN INDEX.HTML STYLING--*/
+#indexContentWrapper {
+    /*position: absolute;*/
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/*--BEGIN ENTRANCE INSTUCTION STYLING--*/
+/*--BEGIN ENTRANCE INSTRUCTION STYLING--*/
 .entranceInstructions {
-font-family: stalemate;
+    /*position: absolute;*/
+    /*display: block;*/
+    /*width: 1000px;*/
+    /*left: 50%;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: stalemate;
     font-size: 80px;
-    text align: center;
+    text-align: center;
     color: #FFD700;
-  margin-left: 16%}
-
-/*--BEGIN SPOTLIGHT ANIMATION--*/
- @-webkit-keyframes swingingLeft {
-	0%{-webkit-transform: rotate(10deg);}
-	50%{-webkit-transform: rotate(45deg)}
-	100%{-webkit-transform: rotate(10deg);}
-}
-
- @keyframes swingingLeft {
-	0%{transform: rotate(10deg);}
-	50%{transform: rotate(45deg)}
-	100%{transform: rotate(10deg);}
-}
-
-div.leftImg {
-  display: inline;
-  position: absolute;
-  top: 130px;
-  height: 300px;
-  -webkit-transform-origin: 50% 154%;
-  transform-origin: 50% 154%;
-  -webkit-animation: swingingLeft 3.5s ease-in-out forwards infinite;
-  animation: swingingLeft 3.5s ease-in-out forwards infinite;
-
-}
-
-@-webkit-keyframes swingingRight {
-	0%{-webkit-transform: rotate(-10deg);}
-	50%{-webkit-transform: rotate(-45deg)}
-	100%{-webkit-transform: rotate(-10deg);}
-}
-
- @keyframes swingingRight {
-	0%{transform: rotate(-10deg);}
-	50%{transform: rotate(-45deg)}
-	100%{transform: rotate(-10deg);}
-}
-
-div.rightImg {
-  display: inline;
-  position: absolute;
-  top: 130px;
-  left: 820px;
-  height: 300px;
- -webkit-transform-origin: 50% 154%;
- transform-origin: 50% 154%;
- -webkit-animation: swingingRight 3.5s ease-in-out forwards infinite;
- animation: swingingRight 3.5s ease-in-out forwards infinite;
-}
-/*---END INDEX PAGE STYLING--*/
-
-/*---BEGIN STYLING FOR SEATS.HTML---*/
-
-/*---BEGIN INSTRUCTION STYLING---*/
-p {
-  font-family: "stalemate";
-  color:#FFD700;
-  font-size: 260%;
-  text-align: center;
-  margin top: 10px;
-  display: block;
-}
-
-/*---BEGIN STAGE IMAGE STYLE---*/
-.stage {
-  position: relative;
-  top: 30px;
-  left: 29%;
-  opacity:1;
-  transition: 1s ease;
-}
-
-.stage:hover {
-opacity:0.5;
-transition: 1s ease;
-}
-
-/*---BEGIN SEATING AREA STYLING---*/
-.seatStage {
-  position: relative;
-  top: 40px;
-}
-
-div.seatSpotBs {
-  margin: 1%;
-  width: 50px;
-  height: 50px;
-}
-
-div.spacer {
-  height: 50px;
-}
-
-div#rowA {
-  position: relative;
-  left: 36%;
-}
-
-div#rowB {
-  position: relative;
-  left: 33%;
-}
-
-div#rowC {
-  position: relative;
-  left: 30%;
-}
-
-div#rowD {
-  position: relative;
-  left: 21%;
 }
 
 div.mainImg {
-  width: 100%;
-  height: 100%;
-  opacity:0.5;
-  transition: 1s ease;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    /*left: 50px;*/
+    /*right: auto;*/
+    clear: both;
+    opacity: 0.5;
+    transition: 1s ease;
 }
 
 .mainImg:hover {
-opacity:1;
-transition: 1s ease;
+    opacity: 1;
+    transition: 1s ease;
 }
 
+/*--BEGIN SPOTLIGHT ANIMATION--*/
+
+@-webkit-keyframes swingingLeft {
+    0% {
+        -webkit-transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(45deg)
+    }
+    100% {
+        -webkit-transform: rotate(10deg);
+    }
+}
+
+@keyframes swingingLeft {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(45deg)
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+div.leftImg {
+    display: inline;
+    position: absolute;
+    top: 130px;
+    height: 300px;
+    left: 5%;
+    -webkit-transform-origin: 50% 154%;
+    transform-origin: 50% 154%;
+    -webkit-animation: swingingLeft 3.5s ease-in-out forwards infinite;
+    animation: swingingLeft 3.5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes swingingRight {
+    0% {
+        -webkit-transform: rotate(-10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-45deg)
+    }
+    100% {
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
+@keyframes swingingRight {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(-45deg)
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+div.rightImg {
+    display: inline;
+    position: absolute;
+    top: 130px;
+    right: 5%;
+    /*left: 820px;*/
+    height: 300px;
+    -webkit-transform-origin: 50% 154%;
+    transform-origin: 50% 154%;
+    -webkit-animation: swingingRight 3.5s ease-in-out forwards infinite;
+    animation: swingingRight 3.5s ease-in-out forwards infinite;
+}
+
+
+/*---END INDEX PAGE STYLING--*/
+
+
+/*---BEGIN STYLING FOR SEATS.HTML---*/
+
+
+/*---BEGIN INSTRUCTION STYLING---*/
+
+#instruction {
+    position: relative;
+    font-family: "stalemate";
+    color: #FFD700;
+    font-size: 260%;
+    text-align: center;
+    top: 20px;
+    display: block;
+}
+
+
+/*---BEGIN STAGE IMAGE STYLE---*/
+
+.stage {
+    position: relative;
+    top: 30px;
+    left: 29%;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.stage:hover {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+
+/*---BEGIN SEATING AREA STYLING---*/
+
+.seatStage {
+    position: relative;
+    top: 40px;
+}
+
+div.seatSpotBs {
+    margin: 1%;
+    width: 50px;
+    height: 50px;
+}
+
+div.spacer {
+    height: 50px;
+}
+
+div#rowA {
+    position: relative;
+    left: 36%;
+}
+
+div#rowB {
+    position: relative;
+    left: 33%;
+}
+
+div#rowC {
+    position: relative;
+    left: 30%;
+}
+
+div#rowD {
+    position: relative;
+    left: 21%;
+}
+
+
+
 /*---BEGIN SEAT SELECTION FORM---*/
+
 .popup {
-  background-color: #333333;
-  border-radius: 25px;
-  /*border: 2px solid white;*/
-  height: 320px;
-  width: 20%;
-  display: block;
-  float: left;
-  clear: left;
-  position: fixed;
-  top: 10%;
-  left: 5%;
-  z-index: 100;
+    background-color: #333333;
+    border-radius: 25px;
+    /*border: 2px solid white;*/
+    height: 320px;
+    width: 20%;
+    display: block;
+    float: left;
+    clear: left;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    z-index: 100;
 }
 
 #UserInfoForm {
-  color: darkGrey;
-  font-family: 'Cagliostro', sans-serif;
-  font-size: 120%;
-  background-color: #333333;
-  padding: 10px;
-  border-radius: 25px;
-  border: 2px solid white;
-  /*height: 100%;*/
-  width: 100%;
-  /*display: block;
+    color: darkGrey;
+    font-family: 'Cagliostro', sans-serif;
+    font-size: 120%;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid white;
+    /*height: 100%;*/
+    width: 100%;
+    /*display: block;
   float: left;
   clear: left;
   position: fixed;
@@ -182,19 +240,20 @@ transition: 1s ease;
 }
 
 #UserInfoForm legend {
-  color: white;
-  font-family: 'Stalemate', cursive;
-  font-size: 225%;
-  text-align: center;
-  margin-bottom: -10px;
+    color: white;
+    font-family: 'Stalemate', cursive;
+    font-size: 225%;
+    text-align: center;
+    margin-bottom: -10px;
 }
 
 .inputLabel {
-  width: 100%;
-  margin-bottom: 5px;
-  border-radius: 25px;
-  padding-left: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    padding-left: 10px;
 }
+
 
 /*form input {
   display: block;
@@ -203,66 +262,71 @@ transition: 1s ease;
 }*/
 
 button {
-  float: left;
-  clear: left;
-  margin-top: 10px;
-  background-color: #333333;
-  border: 1px solid white;
-  border-radius: 25px;
+    float: left;
+    clear: left;
+    margin-top: 10px;
+    background-color: #333333;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
 .popup-close {
-  width:30px;
-  height:30px;
-  padding-top:4px;
-  display:inline-block;
-  position:absolute;
-  top:0px;
-  right:0px;
-  transition:ease 0.25s all;
-  -webkit-transform:translate(50%, -50%);
-  transform:translate(50%, -50%);
-  border-radius:1000px;
-  background:rgba(0,0,0,0.8);
-  font-family:Arial, Sans-Serif;
-  font-size:20px;
-  text-align:center;
-  line-height:100%;
-  color:#fff;
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: ease 0.25s all;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    border-radius: 1000px;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Sans-Serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100%;
+    color: #fff;
 }
 
 .popup-close:hover {
-        -webkit-transform:translate(50%, -50%) rotate(180deg);
-        transform:translate(50%, -50%) rotate(180deg);
-        background:rgba(0,0,0,1);
+    -webkit-transform: translate(50%, -50%) rotate(180deg);
+    transform: translate(50%, -50%) rotate(180deg);
+    background: rgba(0, 0, 0, 1);
 }
+
 
 /*---END SEAT.HTML STYLING---*/
 
 
 /*--BEGIN FOOTER STYLING--*/
+
 span.copyRight {
-  float: right;
-  margin-right: 5%;
-  color: #888888;
+    float: right;
+    margin-right: 5%;
+    color: #888888;
 }
 
 span.contactSpan {
-  color: white;
-  font-family: 'Cagliostro', sans-serif;
-  margin-left: 5%;
-  margin-right: 1%;
+    color: white;
+    font-family: 'Cagliostro', sans-serif;
+    margin-left: 5%;
+    margin-right: 1%;
 }
 
 span.contactSpan:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 span.glyphicon {
-  margin-left: 1%;
-  color: white;
+    margin-left: 1%;
+    color: white;
 }
+
 span.glyphicon:hover {
-  background-color: blue;
+    background-color: blue;
 }
+
+
 /*--END FOOTER STYLE--*/
