@@ -1,3 +1,4 @@
+//need this for the js to work//
 $(document).ready(function() {
 
     //create array to store all user information
@@ -9,14 +10,14 @@ $(document).ready(function() {
 
     //form always slidesDown when seat is selected.
     $('img.seat').on('click', function() {
-<<<<<<< HEAD
+
         //make sure form only drops when seat is open or selected.
         if ($(this).attr('src') === 'assets/openSeat.png' || $(this).attr('src') === 'assets/selectSeat.png') {
             $('form').slideDown('slow');
             $('div.popup').slideDown('very slow');
         }
     });
-=======
+
       //make sure form only drops when seat is open or selected.
       if ($(this).attr('src') === 'assets/openSeat.png' || $(this).attr('src') === 'assets/selectSeat.png') {
       $('div.popup').slideDown('slow');
