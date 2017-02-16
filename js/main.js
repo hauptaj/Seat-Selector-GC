@@ -4,9 +4,9 @@ $(document).ready(function() {
     var seatArray = [];
 
     //identify clicked seat as chosen.
-    $("img.seat").on('click', function() {
-        $(this).attr('src', "assets/occupiedSeat.png");
-    });
+    // $("img.seat").on('click', function() {
+    //     $(this).attr('src', "assets/occupiedSeat.png");
+    // });
 
     //send seatID to form.
     $("img.seat").on("click", function() {
@@ -24,6 +24,15 @@ $(document).ready(function() {
         var practice = new userInfo($("#seatPlace").val(), $("#firstName").val(),$("#lastName").val(), $("#email").val(), $("#phone").val());
         console.log(practice);
         seatArray.push(practice);
+        console.log(seatArray);
+        for (var i = 0; i < seatArray.length; i++) {
+          console.log(seatArray[i].seatPosition);
+          $('img.seat').each(function(i) {
+            if (seatArray[i].seatPosition === $('img.seat').attr('id') {
+              $('img.seat').attr('src', 'assets/occupiedSeat.png');
+            }
+          });
+        }
     });
 
     //constructor function to create object of person's information.
@@ -34,6 +43,8 @@ $(document).ready(function() {
         this.email = email;
         this.phone = phone;
     }
+
+
 
 
 
