@@ -151,7 +151,20 @@ div.rightImg {
  -webkit-animation: swingingRight 3.5s ease-in-out forwards infinite;
  animation: swingingRight 3.5s ease-in-out forwards infinite;
 }
+/*Styling for text on the stage on the seatspage */
+p {
+  font-family: "stalemate";
+  color:#FFD700;
+  font-size: 260%;
+  width: 55%;
+  text-align: center;
+  
+  margin top: 0.25cm;
 
+}
+
+
+/*Styling for text on the stage on the seatspage */
 div.mainImg {
   width: 100%;
   height: 100%;
@@ -163,12 +176,9 @@ div.mainImg {
 opacity:1;
 transition: 1s ease;
 }
-
 /*--END SPOTLIGHT ANIMATION--*/
 
-
 /*--END LANDING PAGE--*/
-
 /*---STYLE FOR FORM For USER TO SELECT SEAT---*/
 
 #UserInfoForm {
