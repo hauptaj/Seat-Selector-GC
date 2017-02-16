@@ -165,19 +165,12 @@ transition: 1s ease;
 /*--END LANDING PAGE--*/
 
 /*---STYLE FOR FOR USER TO SELECT SEAT---*/
-
-#UserInfoForm {
-  color: darkGrey;
-  font-family: 'Cagliostro', sans-serif;
-  font-size: 120%;
-  background-color: #333333;
-  /*opacity: .75;*/
-  padding: 10px;
+.popup {
+  background-color: #333333
   border-radius: 25px;
-  border: 2px solid white;
-  height: 45%;
+  /*border: 2px solid white;*/
+  height: 320px;
   width: 20%;
-  /*box-shadow: 5px 5px 9px #5B5A58;*/
   display: block;
   float: left;
   clear: left;
@@ -185,6 +178,24 @@ transition: 1s ease;
   top: 10%;
   left: 5%;
   z-index: 100;
+}
+#UserInfoForm {
+  color: darkGrey;
+  font-family: 'Cagliostro', sans-serif;
+  font-size: 120%;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid white;
+  /*height: 100%;*/
+  width: 100%;
+  /*display: block;
+  float: left;
+  clear: left;
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  z-index: 100;*/
 }
 
 #UserInfoForm legend {
@@ -217,4 +228,15 @@ button {
   border-radius: 25px;
 }
 
-/*--END FORM STYLE--*/
+.popup-close {
+    transition:ease 0.25s all;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(50%, -50%);
+  }  
+
+.popup-close:hover {
+        -webkit-transform:translate(50%, -50%) rotate(180deg);
+        transform:translate(50%, -50%) rotate(180deg);
+        background:rgba(0,0,0,1);
+    }
+/*END FORM*/

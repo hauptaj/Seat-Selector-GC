@@ -15,8 +15,8 @@
     <div class="stage">
         <a href=index.html><img src="assets/stage.jpg" alt="stage"></a>
     </div>
-
-
+<!-- CREATE A DIV FOR FORM TO POPUP -->
+<div class="popup" data-popup="popup-1">
     <div class="col-md-5 infoForm" id="UserInfoForm">
         <form action="seats.html" method="get" class="pure-form pure-form-stacked infoForm" id="popup">
             <fieldset>
@@ -37,7 +37,12 @@
                 <button type="button" class="pure-button pure-button-primary" id="loadButton">Submit</button>
             </fieldset>
         </form>
+
+        <!-- CREATE A CLOSE BUTTON -->
+        <p><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-3" href="#">x</a>
     </div>
+</div>
 
 
 
@@ -46,7 +51,8 @@
 
             <div class="row" id="rowA">
                 <div class="col-xs-2 seatSpotBs">
-                    <img src="assets/openSeat.png" alt="" class="seat" height="50px" width="50px" id="Row_A_Seat_1" data-toggle="tooltip" title="Seat A1">
+                    <img src="assets/openSeat.png" data-popup-open="popup-1" alt="" class="seat" height="50px" width="50px" id="Row_A_Seat_1" data-toggle="tooltip" title="Seat A1">
+                    <!-- data-popup-open="popup-1" TRIGGERS POPUP -->
                 </div>
 
                 <div class="col-xs-2 seatSpotBs">
