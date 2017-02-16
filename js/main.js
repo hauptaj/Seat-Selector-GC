@@ -15,9 +15,13 @@ $(document).ready(function() {
     });
 
     //create tooltip when hovering
-    $("img.seat").on('hover', function() {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+    // $("img.seat").on('hover', function() {
+    //   $('[data-toggle="tooltip"]').tooltip();
+    // });
+
+    $( function() {
+    $( "img.seat" ).tooltip();
+  } );
 
     //submit button to store form information in array.
     $('button#loadButton').on('click', function() {
