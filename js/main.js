@@ -1,17 +1,27 @@
 $(document).ready(function() {
 
+    //initially start the form as hidden.
+    $('form').hide();
+    $('div.popup').hide();
+
+    //form always slidesDown when seat is selected.
+    $('img.seat').on('click', function() {
+      $('form').slideDown('slow');
+      $('div.popup').slideDown('very slow');
+    })
     //create array to store all user information
     var seatArray = [];
 
-    // identify clicked seat as chosen.
+    // identify clicked seat as chosen
     $("img.seat").on('click', function() {
-        $(this).attr('src', "assets/selectSeat.png");
-    });
-
-    //send seatID to form.
-    $("img.seat").on("click", function() {
-        var seatId = $(this).attr("id");
-        $("#seatPlace").val(seatId);
+        if ($(this).attr('src') === 'assets/openSeat.png') {
+          $(this).attr('src', 'assets/selectSeat.png');
+          var seatId = $(this).attr("id");
+          $("#seatPlace").val(seatId);
+        } else if ($(this).attr('src') === 'assets/selectSeat.png') {
+          $(this).attr('src', 'assets/openSeat.png');
+          $("#seatPlace").val('');
+        }
     });
 
     //function for tooltip hover Bootstrap*
@@ -21,6 +31,7 @@ $(document).ready(function() {
 
     //submit button to store form information in array.
     $('button#loadButton').on('click', function() {
+
         var practice = new userInfo($("#seatPlace").val(), $("#firstName").val(),$("#lastName").val(), $("#email").val(), $("#phone").val());
         seatArray.push(practice);
 
@@ -42,6 +53,12 @@ $(document).ready(function() {
 
     });
 
+    //form slides up after submit.
+    $('button#loadButton').on('click', function() {
+      $('form').slideUp('slow');
+      $('div.popup').slideUp('slow');
+    })
+
     //constructor function to create object of person's information.
     function userInfo(seatPosition, firstName, lastName, email, phone) {
         this.seatPosition = seatPosition;
@@ -50,5 +67,6 @@ $(document).ready(function() {
         this.email = email;
         this.phone = phone;
     }
+
 
 });

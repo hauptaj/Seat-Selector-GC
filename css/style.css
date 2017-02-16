@@ -156,7 +156,7 @@ transition: 1s ease;
 
 /*---BEGIN SEAT SELECTION FORM---*/
 .popup {
-  background-color: #333333
+  background-color: #333333;
   border-radius: 25px;
   /*border: 2px solid white;*/
   height: 320px;
@@ -169,6 +169,7 @@ transition: 1s ease;
   left: 5%;
   z-index: 100;
 }
+
 #UserInfoForm {
   color: darkGrey;
   font-family: 'Cagliostro', sans-serif;
@@ -243,6 +244,7 @@ button {
         transform:translate(50%, -50%) rotate(180deg);
         background:rgba(0,0,0,1);
 }
+
 /*---END SEAT.HTML STYLING---*/
 
 
