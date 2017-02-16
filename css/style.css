@@ -206,9 +206,6 @@ div#rowD {
 /*---BEGIN SEAT SELECTION FORM---*/
 
 .popup {
-    background-color: #333333;
-    border-radius: 25px;
-    /*border: 2px solid white;*/
     height: 320px;
     width: 20%;
     display: block;
@@ -270,7 +267,7 @@ button {
     border-radius: 25px;
 }
 
-.popup-close {
+/*.popup-close {
     width: 30px;
     height: 30px;
     padding-top: 4px;
@@ -295,7 +292,7 @@ button {
     transform: translate(50%, -50%) rotate(180deg);
     background: rgba(0, 0, 0, 1);
 }
-
+*/
 
 /*---END SEAT.HTML STYLING---*/
 
