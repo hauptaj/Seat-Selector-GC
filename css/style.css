@@ -32,11 +32,6 @@ transition: 1s ease;
   top: 40px;
 }
 
-/*div.header {
-  position: relative;
-  left: 25%;
-}*/
-
 div.seatSpotBs {
   margin: 1%;
   width: 50px;
@@ -143,6 +138,17 @@ div.rightImg {
  -webkit-animation: swingingRight 3.5s ease-in-out forwards infinite;
  animation: swingingRight 3.5s ease-in-out forwards infinite;
 }
+/*Styling for text on the stage on the seatspage */
+p {
+  font-family: "stalemate";
+  color:#FFD700;
+  font-size: 260%;
+  text-align: center;
+  margin top: 10px;
+  display: block;
+}
+/*Styling for text on the stage on the seatspage */
+
 
 div.mainImg {
   width: 100%;
@@ -155,16 +161,10 @@ div.mainImg {
 opacity:1;
 transition: 1s ease;
 }
-
 /*--END SPOTLIGHT ANIMATION--*/
-
-.entranceInstructions {
-  width: 100%;
-  text-align: center;
-}
 /*--END LANDING PAGE--*/
+/*---STYLE FOR FORM For USER TO SELECT SEAT---*/
 
-/*---STYLE FOR FOR USER TO SELECT SEAT---*/
 .popup {
   background-color: #333333
   border-radius: 25px;
