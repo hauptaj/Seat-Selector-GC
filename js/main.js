@@ -13,10 +13,6 @@ $(document).ready(function() {
         var seatId = $(this).attr("id");
         $("#seatPlace").val(seatId);
     });
-<<<<<<< HEAD
-    //this variable into the form.
-=======
->>>>>>> cbad7fa2f397c6756d85d432018e61ab3bd5e6a8
 
     //create tooltip when hovering
     $("img.seat").on('hover', function() {
