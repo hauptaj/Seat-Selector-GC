@@ -95,6 +95,14 @@ span.glyphicon:hover {
 /*--END FOOTER STYLE--*/
 
 /*--LANDING PAGE--*/
+
+.entranceInstructions {
+  color:#FFD700;
+  font-size: 45px;
+ margin-left: 6.5cm;
+  width: 40%;
+}
+
 /*--SPOTLIGHT ANIMATION--*/
  @-webkit-keyframes swingingLeft {
 	0%{-webkit-transform: rotate(10deg);}
@@ -158,10 +166,7 @@ transition: 1s ease;
 
 /*--END SPOTLIGHT ANIMATION--*/
 
-.entranceInstructions {
-  width: 100%;
-  text-align: center;
-}
+
 /*--END LANDING PAGE--*/
 
 /*---STYLE FOR FOR USER TO SELECT SEAT---*/
@@ -201,12 +206,6 @@ transition: 1s ease;
   border-radius: 25px;
   padding-left: 10px;
 }
-
-/*form input {
-  display: block;
-  float: left;
-  clear: left;
-}*/
 
 button {
   float: left;
