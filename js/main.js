@@ -11,20 +11,12 @@ $(document).ready(function() {
     //form always slidesDown when seat is selected.
     $('img.seat').on('click', function() {
 
-        //make sure form only drops when seat is open or selected.
-        if ($(this).attr('src') === 'assets/openSeat.png' || $(this).attr('src') === 'assets/selectSeat.png') {
-            $('form').slideDown('slow');
-            $('div.popup').slideDown('very slow');
-        }
-    });
-
       //make sure form only drops when seat is open or selected.
       if ($(this).attr('src') === 'assets/openSeat.png' || $(this).attr('src') === 'assets/selectSeat.png') {
       $('div.popup').slideDown('slow');
       $('form').slideDown('slow');
     }
   });
->>>>>>> a54dc8ca7ee652833bf35358f141b6dd096ecbe8
 
     // function to alter seat images and input seat ID.
     $("img.seat").on('click', function() {
