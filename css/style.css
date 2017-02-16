@@ -33,8 +33,13 @@ body {
     font-family: stalemate;
     font-size: 80px;
     text-align: center;
-    color: #FFD700;
+    color: #ffffff;
+    -webkit-stroke-width: 5.3px;
+        -webkit-stroke-color: #FFFFFF;
+        -webkit-fill-color: #FFFFFF;
+        text-shadow: 1px 0px 20px yellow;
 }
+
 
 div.mainImg {
     width: 100%;
@@ -44,7 +49,7 @@ div.mainImg {
     /*left: 50px;*/
     /*right: auto;*/
     clear: both;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: 1s ease;
 }
 
@@ -140,11 +145,15 @@ div.rightImg {
 #instruction {
     position: relative;
     font-family: "stalemate";
-    color: #FFD700;
     font-size: 260%;
     text-align: center;
     top: 20px;
     display: block;
+    color: #ffffff;
+    -webkit-stroke-width: 5.3px;
+        -webkit-stroke-color: #FFFFFF;
+        -webkit-fill-color: #FFFFFF;
+        text-shadow: 1px 0px 40px yellow;
 }
 
 
