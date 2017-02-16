@@ -4,23 +4,18 @@ $(document).ready(function() {
     var seatArray = [];
 
     //identify clicked seat as chosen.
-    $("img.seat").on('click', function() {
-        $(this).attr('src', "assets/occupiedSeat.png");
-    });
+    // $("img.seat").on('click', function() {
+    //     $(this).attr('src', "assets/occupiedSeat.png");
+    // });
 
     //send seatID to form.
     $("img.seat").on("click", function() {
         var seatId = $(this).attr("id");
         $("#seatPlace").val(seatId);
     });
-<<<<<<< HEAD
-    //this variable into the form.
-=======
->>>>>>> cbad7fa2f397c6756d85d432018e61ab3bd5e6a8
 
-    //create tooltip when hovering
-    $("img.seat").on('hover', function() {
-      $('[data-toggle="tooltip"]').tooltip();
+    $( function() {
+      $( "img.seat" ).tooltip();
     });
 
     //submit button to store form information in array.
@@ -28,6 +23,15 @@ $(document).ready(function() {
         var practice = new userInfo($("#seatPlace").val(), $("#firstName").val(),$("#lastName").val(), $("#email").val(), $("#phone").val());
         console.log(practice);
         seatArray.push(practice);
+        console.log(seatArray);
+        for (var i = 0; i < seatArray.length; i++) {
+          console.log(seatArray[i].seatPosition);
+          $('img.seat').each(function(i) {
+            if (seatArray[i].seatPosition === $('img.seat').attr('id')) {
+              $(this).attr('src', 'assets/occupiedSeat.png');
+            }
+          });
+        }
     });
 
     //constructor function to create object of person's information.
@@ -38,6 +42,8 @@ $(document).ready(function() {
         this.email = email;
         this.phone = phone;
     }
+
+
 
 
 
