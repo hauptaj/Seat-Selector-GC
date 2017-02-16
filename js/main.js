@@ -9,21 +9,31 @@ $(document).ready(function() {
 
     //form always slidesDown when seat is selected.
     $('img.seat').on('click', function() {
+      //make sure form only drops when seat is open or selected.
+      if ($(this).attr('src') === 'assets/openSeat.png' || $(this).attr('src') === 'assets/selectSeat.png') {
       $('form').slideDown('slow');
       $('div.popup').slideDown('very slow');
-    })
+    }
+  });
 
-    // identify clicked seat as chosen
+    // function to alter seat images and input seat ID.
     $("img.seat").on('click', function() {
+      //change open seat to selected seat
         if ($(this).attr('src') === 'assets/openSeat.png') {
           $(this).attr('src', 'assets/selectSeat.png');
           var seatId = $(this).attr("id");
           $("#seatPlace").val(seatId);
+      //change selected seats to open seats.
         } else if ($(this).attr('src') === 'assets/selectSeat.png') {
           $(this).attr('src', 'assets/openSeat.png');
           $("#seatPlace").val('');
+      //display info for occupied seats.
         } else if ($(this).attr('src') === 'assets/occupiedSeat') {
+          for (var i = 0; i < seatArray.length; i++) {
+            if ($(this).attr('id') === seatArray[i].seatPosition) {
 
+            }
+          }
         }
     });
 
@@ -43,6 +53,8 @@ $(document).ready(function() {
           for (var i = 0; i < seatArray.length; i++) {
             if ($(this).attr('id') === seatArray[i].seatPosition) {
               $(this).attr('src', "assets/occupiedSeat.png");
+              //method to adjust tooltip text to appropriate reserved data.
+              $(this).attr('title', "Reserved for: " + seatArray[i].firstName + " " + seatArray[i].lastName).tooltip('fixTitle');
             }
           }
       });
