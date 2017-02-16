@@ -14,12 +14,12 @@ $(document).ready(function() {
     });
     //this variable into the form.
 
-    $("img.seat").on('click', function() {
+    $("img.seat").on('hover', function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
 
     $('button#loadButton').on('click', function() {
-        var practice = new userInfo($("#firstName").val(),$("#lastName").val(), $("#email").val(), $("#phone").val());
+        var practice = new userInfo($("#seatPlace").val(), $("#firstName").val(),$("#lastName").val(), $("#email").val(), $("#phone").val());
         console.log(practice);
         seatArray.push(practice);
         console.log(seatArray);
@@ -27,9 +27,12 @@ $(document).ready(function() {
         console.log($("#lastName").val());
         console.log($("#email").val());
         console.log($("#phone").val());
+        console.log(practice.seatPosition);
+        $(practice.seatPosition).attr("src", "assets/occupiedSeat.png");
     });
 
-    function userInfo(firstName, lastName, email, phone) {
+    function userInfo(seatPosition, firstName, lastName, email, phone) {
+        this.seatPosition = seatPosition;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
