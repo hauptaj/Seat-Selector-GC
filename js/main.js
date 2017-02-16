@@ -12,8 +12,7 @@ $(document).ready(function() {
         $("#seatPlace").val(seatId);
         console.log(seatId);
     });
-    //get this variblae into the form.
-
+    //this variable into the form.
 
     $("img.seat").on('click', function() {
         $('[data-toggle="tooltip"]').tooltip();
