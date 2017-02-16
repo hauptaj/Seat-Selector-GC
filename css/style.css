@@ -12,85 +12,17 @@ body {
   background-color: black;
 }
 
-/*---STYLE STAGE AT TOP---*/
-.stage {
-  position: relative;
-  top: 30px;
-  left: 29%;
-  opacity:1;
-  transition: 1s ease;
-}
+/*--BEGIN INDEX.HTML STYLING--*/
 
-.stage:hover {
-opacity:0.5;
-transition: 1s ease;
-}
+/*--BEGIN ENTRANCE INSTUCTION STYLING--*/
+.entranceInstructions {
+font-family: stalemate;
+    font-size: 80px;
+    text align: center;
+    color: #FFD700;
+  margin-left: 16%}
 
-/*---POSITION AREA FOR SEATS---*/
-.seatStage {
-  position: relative;
-  top: 40px;
-}
-
-div.seatSpotBs {
-  margin: 1%;
-  width: 50px;
-  height: 50px;
-}
-
-div.spacer {
-  height: 50px;
-}
-
-div#rowA {
-  position: relative;
-  left: 36%;
-}
-
-div#rowB {
-  position: relative;
-  left: 33%;
-}
-
-div#rowC {
-  position: relative;
-  left: 30%;
-}
-
-div#rowD {
-  position: relative;
-  left: 21%;
-}
-
-
-/*--STYLE FOOTER--*/
-span.copyRight {
-  float: right;
-  margin-right: 5%;
-}
-
-span.contactSpan {
-  color: white;
-  font-family: 'Cagliostro', sans-serif;
-  margin-left: 5%;
-  margin-right: 1%;
-}
-
-span.contactSpan:hover {
-  text-decoration: underline;
-}
-
-span.glyphicon {
-  margin-left: 1%;
-  color: white;
-}
-span.glyphicon:hover {
-  background-color: blue;
-}
-/*--END FOOTER STYLE--*/
-
-/*--LANDING PAGE--*/
-/*--SPOTLIGHT ANIMATION--*/
+/*--BEGIN SPOTLIGHT ANIMATION--*/
  @-webkit-keyframes swingingLeft {
 	0%{-webkit-transform: rotate(10deg);}
 	50%{-webkit-transform: rotate(45deg)}
@@ -138,7 +70,11 @@ div.rightImg {
  -webkit-animation: swingingRight 3.5s ease-in-out forwards infinite;
  animation: swingingRight 3.5s ease-in-out forwards infinite;
 }
-/*Styling for text on the stage on the seatspage */
+/*---END INDEX PAGE STYLING--*/
+
+/*---BEGIN STYLING FOR SEATS.HTML---*/
+
+/*---BEGIN INSTRUCTION STYLING---*/
 p {
   font-family: "stalemate";
   color:#FFD700;
@@ -147,8 +83,56 @@ p {
   margin top: 10px;
   display: block;
 }
-/*Styling for text on the stage on the seatspage */
 
+/*---BEGIN STAGE IMAGE STYLE---*/
+.stage {
+  position: relative;
+  top: 30px;
+  left: 29%;
+  opacity:1;
+  transition: 1s ease;
+}
+
+.stage:hover {
+opacity:0.5;
+transition: 1s ease;
+}
+
+/*---BEGIN SEATING AREA STYLING---*/
+.seatStage {
+  position: relative;
+  top: 40px;
+}
+
+div.seatSpotBs {
+  margin: 1%;
+  width: 50px;
+  height: 50px;
+}
+
+div.spacer {
+  height: 50px;
+}
+
+div#rowA {
+  position: relative;
+  left: 36%;
+}
+
+div#rowB {
+  position: relative;
+  left: 33%;
+}
+
+div#rowC {
+  position: relative;
+  left: 30%;
+}
+
+div#rowD {
+  position: relative;
+  left: 21%;
+}
 
 div.mainImg {
   width: 100%;
@@ -161,10 +145,8 @@ div.mainImg {
 opacity:1;
 transition: 1s ease;
 }
-/*--END SPOTLIGHT ANIMATION--*/
-/*--END LANDING PAGE--*/
-/*---STYLE FOR FORM For USER TO SELECT SEAT---*/
 
+/*---BEGIN SEAT SELECTION FORM---*/
 .popup {
   background-color: #333333;
   border-radius: 25px;
@@ -254,4 +236,33 @@ button {
         transform:translate(50%, -50%) rotate(180deg);
         background:rgba(0,0,0,1);
 }
-/*END FORM*/
+
+/*---END SEAT.HTML STYLING---*/
+
+
+/*--BEGIN FOOTER STYLING--*/
+span.copyRight {
+  float: right;
+  margin-right: 5%;
+  color: #888888;
+}
+
+span.contactSpan {
+  color: white;
+  font-family: 'Cagliostro', sans-serif;
+  margin-left: 5%;
+  margin-right: 1%;
+}
+
+span.contactSpan:hover {
+  text-decoration: underline;
+}
+
+span.glyphicon {
+  margin-left: 1%;
+  color: white;
+}
+span.glyphicon:hover {
+  background-color: blue;
+}
+/*--END FOOTER STYLE--*/
