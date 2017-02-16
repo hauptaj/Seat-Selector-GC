@@ -232,11 +232,11 @@ button {
     transition:ease 0.25s all;
     -webkit-transform:translate(-50%, -50%);
     transform:translate(50%, -50%);
-  }  
+}
 
 .popup-close:hover {
         -webkit-transform:translate(50%, -50%) rotate(180deg);
         transform:translate(50%, -50%) rotate(180deg);
         background:rgba(0,0,0,1);
-    }
+}
 /*END FORM*/
