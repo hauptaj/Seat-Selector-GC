@@ -14,14 +14,9 @@ $(document).ready(function() {
         $("#seatPlace").val(seatId);
     });
 
-    //create tooltip when hovering
-    // $("img.seat").on('hover', function() {
-    //   $('[data-toggle="tooltip"]').tooltip();
-    // });
-
     $( function() {
-    $( "img.seat" ).tooltip();
-  } );
+      $( "img.seat" ).tooltip();
+    });
 
     //submit button to store form information in array.
     $('button#loadButton').on('click', function() {
