@@ -28,8 +28,8 @@ $(document).ready(function() {
         for (var i = 0; i < seatArray.length; i++) {
           console.log(seatArray[i].seatPosition);
           $('img.seat').each(function(i) {
-            if (seatArray[i].seatPosition === $('img.seat').attr('id') {
-              $('img.seat').attr('src', 'assets/occupiedSeat.png');
+            if (seatArray[i].seatPosition === $('img.seat').attr('id')) {
+              $(this).attr('src', 'assets/occupiedSeat.png');
             }
           });
         }
