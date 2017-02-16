@@ -6,7 +6,6 @@ $(document).ready(function() {
     // identify clicked seat as chosen.
     $("img.seat").on('click', function() {
         $(this).attr('src', "assets/selectSeat.png");
-        })
     });
 
     //send seatID to form.
@@ -32,16 +31,14 @@ $(document).ready(function() {
               $(this).attr('src', "assets/occupiedSeat.png");
             }
           }
-        })
+      });
 
-    //clear all previously entered values to reset form.
-      $('#seatPlace').val('');
-      $('#firstName').val('');
-      $('#lastName').val('');
-      $('#email').val('');
-      $('#phone').val('');
-
-
+      //clear all previously entered values to reset form.
+        $('#seatPlace').val('');
+        $('#firstName').val('');
+        $('#lastName').val('');
+        $('#email').val('');
+        $('#phone').val('');
 
     });
 
