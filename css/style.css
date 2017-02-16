@@ -137,12 +137,13 @@ div.rightImg {
 
 /*---BEGIN INSTRUCTION STYLING---*/
 
-p {
+#instruction {
+    position: relative;
     font-family: "stalemate";
     color: #FFD700;
     font-size: 260%;
     text-align: center;
-    margin top: 10px;
+    top: 20px;
     display: block;
 }
 
