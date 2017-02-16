@@ -166,7 +166,7 @@ transition: 1s ease;
 /*---STYLE FOR FORM For USER TO SELECT SEAT---*/
 
 .popup {
-  background-color: #333333
+  background-color: #333333;
   border-radius: 25px;
   /*border: 2px solid white;*/
   height: 320px;
@@ -179,6 +179,7 @@ transition: 1s ease;
   left: 5%;
   z-index: 100;
 }
+
 #UserInfoForm {
   color: darkGrey;
   font-family: 'Cagliostro', sans-serif;
@@ -254,4 +255,3 @@ button {
         background:rgba(0,0,0,1);
 }
 /*END FORM*/
- 
