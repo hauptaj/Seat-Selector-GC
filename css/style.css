@@ -252,12 +252,6 @@ div#rowD {
 }
 
 
-/*form input {
-  display: block;
-  float: left;
-  clear: left;
-}*/
-
 button {
     float: left;
     clear: left;
@@ -267,32 +261,11 @@ button {
     border-radius: 25px;
 }
 
-/*.popup-close {
-    width: 30px;
-    height: 30px;
-    padding-top: 4px;
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    transition: ease 0.25s all;
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
-    border-radius: 1000px;
-    background: rgba(0, 0, 0, 0.8);
-    font-family: Arial, Sans-Serif;
-    font-size: 20px;
-    text-align: center;
-    line-height: 100%;
-    color: #fff;
+button:hover {
+  background-color: white;
+  color: #333333;
 }
 
-.popup-close:hover {
-    -webkit-transform: translate(50%, -50%) rotate(180deg);
-    transform: translate(50%, -50%) rotate(180deg);
-    background: rgba(0, 0, 0, 1);
-}
-*/
 
 /*---END SEAT.HTML STYLING---*/
 
