@@ -11,8 +11,8 @@ $(document).ready(function() {
     $('img.seat').on('click', function() {
       //make sure form only drops when seat is open or selected.
       if ($(this).attr('src') === 'assets/openSeat.png' || $(this).attr('src') === 'assets/selectSeat.png') {
+      $('div.popup').slideDown('slow');
       $('form').slideDown('slow');
-      $('div.popup').slideDown('very slow');
     }
   });
 
