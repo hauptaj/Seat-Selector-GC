@@ -145,7 +145,7 @@ div.rightImg {
 #instruction {
     position: relative;
     font-family: "stalemate";
-    font-size: 260%;
+    font-size: 290%;
     text-align: center;
     top: 20px;
     display: block;
@@ -234,15 +234,7 @@ div#rowD {
     padding: 10px;
     border-radius: 25px;
     border: 2px solid white;
-    /*height: 100%;*/
     width: 100%;
-    /*display: block;
-  float: left;
-  clear: left;
-  position: fixed;
-  top: 10%;
-  left: 5%;
-  z-index: 100;*/
 }
 
 #UserInfoForm legend {
@@ -275,7 +267,12 @@ button:hover {
   color: #333333;
 }
 
-
+#seatPlace {
+  background-color: #333333;
+  color: lightGrey;
+  border: none;
+  text-align: center;
+}
 /*---END SEAT.HTML STYLING---*/
 
 
