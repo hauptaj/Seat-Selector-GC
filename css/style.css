@@ -32,11 +32,6 @@ transition: 1s ease;
   top: 40px;
 }
 
-/*div.header {
-  position: relative;
-  left: 25%;
-}*/
-
 div.seatSpotBs {
   margin: 1%;
   width: 50px;
@@ -95,14 +90,6 @@ span.glyphicon:hover {
 /*--END FOOTER STYLE--*/
 
 /*--LANDING PAGE--*/
-
-.entranceInstructions {
-  color:#FFD700;
-  font-size: 45px;
- margin-left: 6.5cm;
-  width: 40%;
-}
-
 /*--SPOTLIGHT ANIMATION--*/
  @-webkit-keyframes swingingLeft {
 	0%{-webkit-transform: rotate(10deg);}
@@ -156,15 +143,13 @@ p {
   font-family: "stalemate";
   color:#FFD700;
   font-size: 260%;
-  width: 55%;
   text-align: center;
-  
-  margin top: 0.25cm;
-
+  margin top: 10px;
+  display: block;
 }
-
-
 /*Styling for text on the stage on the seatspage */
+
+
 div.mainImg {
   width: 100%;
   height: 100%;
@@ -177,22 +162,15 @@ opacity:1;
 transition: 1s ease;
 }
 /*--END SPOTLIGHT ANIMATION--*/
-
 /*--END LANDING PAGE--*/
 /*---STYLE FOR FORM For USER TO SELECT SEAT---*/
 
-#UserInfoForm {
-  color: darkGrey;
-  font-family: 'Cagliostro', sans-serif;
-  font-size: 120%;
-  background-color: #333333;
-  /*opacity: .75;*/
-  padding: 10px;
+.popup {
+  background-color: #333333
   border-radius: 25px;
-  border: 2px solid white;
-  height: 45%;
+  /*border: 2px solid white;*/
+  height: 320px;
   width: 20%;
-  /*box-shadow: 5px 5px 9px #5B5A58;*/
   display: block;
   float: left;
   clear: left;
@@ -200,6 +178,24 @@ transition: 1s ease;
   top: 10%;
   left: 5%;
   z-index: 100;
+}
+#UserInfoForm {
+  color: darkGrey;
+  font-family: 'Cagliostro', sans-serif;
+  font-size: 120%;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid white;
+  /*height: 100%;*/
+  width: 100%;
+  /*display: block;
+  float: left;
+  clear: left;
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  z-index: 100;*/
 }
 
 #UserInfoForm legend {
@@ -217,6 +213,12 @@ transition: 1s ease;
   padding-left: 10px;
 }
 
+/*form input {
+  display: block;
+  float: left;
+  clear: left;
+}*/
+
 button {
   float: left;
   clear: left;
@@ -226,4 +228,15 @@ button {
   border-radius: 25px;
 }
 
-/*--END FORM STYLE--*/
+.popup-close {
+    transition:ease 0.25s all;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(50%, -50%);
+}
+
+.popup-close:hover {
+        -webkit-transform:translate(50%, -50%) rotate(180deg);
+        transform:translate(50%, -50%) rotate(180deg);
+        background:rgba(0,0,0,1);
+}
+/*END FORM*/
