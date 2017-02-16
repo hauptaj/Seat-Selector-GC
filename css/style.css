@@ -254,3 +254,27 @@ button {
         background:rgba(0,0,0,1);
 }
 /*END FORM*/
+
+#UserInfoForm.hideMe {
+  color: black;
+  font-family: 'Cagliostro', sans-serif;
+  font-size: 120%;
+  background-color: black;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid black;
+  /*height: 100%;*/
+  width: 100%;
+  /*display: block;
+  float: left;
+  clear: left;
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  z-index: 100;*/
+}
+
+#UserInfoForm input {
+  color: black;
+  background-color: black;
+}
