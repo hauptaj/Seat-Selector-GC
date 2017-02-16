@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    //create array to store all user information
+    var seatArray = [];
+
     //initially start the form as hidden.
     $('form').hide();
     $('div.popup').hide();
@@ -9,8 +12,6 @@ $(document).ready(function() {
       $('form').slideDown('slow');
       $('div.popup').slideDown('very slow');
     })
-    //create array to store all user information
-    var seatArray = [];
 
     // identify clicked seat as chosen
     $("img.seat").on('click', function() {
@@ -21,6 +22,8 @@ $(document).ready(function() {
         } else if ($(this).attr('src') === 'assets/selectSeat.png') {
           $(this).attr('src', 'assets/openSeat.png');
           $("#seatPlace").val('');
+        } else if ($(this).attr('src') === 'assets/occupiedSeat') {
+
         }
     });
 
